@@ -23,7 +23,6 @@ public class LoginEntity {
 	private String email;
 	@NotBlank
 	private String password;
-	@NotBlank
 	@Min(1900)
 	@MaxYearBirth
 	private int birthYear;
