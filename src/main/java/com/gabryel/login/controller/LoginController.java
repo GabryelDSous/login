@@ -9,9 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.gabryel.login.dto.LoginRequestDTO;
 import com.gabryel.login.dto.LoginResponseDTO;
-import com.gabryel.login.entity.LoginEntity;
-import com.gabryel.login.mapper.LoginMapper;
-import com.gabryel.login.repository.LoginRepository;
 import com.gabryel.login.service.LoginService;
 
 import jakarta.validation.Valid;
