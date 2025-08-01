@@ -2,6 +2,7 @@ package com.gabryel.login.entity;
 
 import com.gabryel.login.validation.MaxYearBirth;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,6 +20,7 @@ public class LoginEntity {
 	private Long id;
 	@NotBlank
 	private String name;
+	@Column(unique = true)
 	@NotBlank
 	private String email;
 	@NotBlank
