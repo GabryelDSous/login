@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="loginEmail">Email</label>
+            <input type="email" name="loginEmail" id="loginEmail" placeholder="user@gmail.com" required>
+            <label for="loginSenha">loginPassword</label>
+            <input type="password" name="loginSenha" id="loginPassword" required>
+            <input type="submit" value="Login">
+            <a href="#"><p>Create account</p></a>
+            <div id="errorMsg" style="color: red; margin-top: 10px;"></div>
+            <div id="toast"></div>
+        </form>
+    </main>
+</body>
+<script src="javascript.js"></script>
+</html>
