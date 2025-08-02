@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Create</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/create.css">
 </head>
 <body>
     <main>
-        <h1>Login</h1>
-        <form id="loginForm">
+        <h1>Create</h1>
+        <form id="createForm">
+            <label for="loginName">Name</label>
+            <input type="text" class="inputs" name="loginName" id="loginName" required>
+
             <label for="loginEmail">Email</label>
             <input type="email" class="inputs" name="loginEmail" id="loginEmail" placeholder="user@gmail.com" required>
+
             <label for="loginPassword">loginPassword</label>
             <div style="position: relative;">
                 <input type="password" class="inputs" name="loginPassword" id="loginPassword" required>
                 <button type="button" id="togglePassword" style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%); border-radius:50%;">
-                👁️
-            </button>
-</div>
+                    👁️
+                </button>
+            </div>
+
+            <label for="birthYear">year of birth</label>
+            <input type="number" class="inputs" name="birthYear" id="birthYear" required min="1900" max="">
+
             <input type="submit" class="inputs" value="Login">
             <div id="links">
-                <a href="html/createLogin.html"><p>Create account</p></a>
-                <a href="html/deleteLogin.html"><p>Delete account</p></a>
+                <a href="../index.html"><p>Login account</p></a>
+                <a href="deleteLogin.html"><p>Delete account</p></a>
             </div>
             <div id="errorMsg" style="color: red; margin-top: 10px;"></div>
         </form>
     </main>
 </body>
-<script src="js/loginJS.js"></script>
-<script src="js/passwordJS.js"></script>
+<script src="../js/passwordJS.js"></script>
+<script src="../js/create.js"></script>
 </html>

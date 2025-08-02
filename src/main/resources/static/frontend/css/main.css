@@ -9,8 +9,8 @@
 
 main{
     background-color: rgb(137, 240, 197);
-    max-width: 500px;
-    height: 400px;
+    max-width: 550px;
+    height: 450px;
     margin: 200px auto 0px;
     text-align: center;
     border-radius: 10px;
@@ -36,7 +36,7 @@ label{
     cursor: pointer;
 }
 
-#loginPassword, #loginEmail{
+.inputs{
     font-size: .8em;
     text-align: center;
     font-family: monospace;
@@ -70,12 +70,18 @@ input[type=submit]:hover{
 a{
     text-decoration: none;
     font-size: .9em;
-    margin: 6px 0px;
+    margin: 6px 0px 6px 10px;
     color: black;
+    padding: 4px;
+    border-radius: 10px;
 }
 
 a:hover{
     text-decoration: underline;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    transition: .5s;
+
 }
 #errorMsg {
     font-size: 1em;
@@ -84,6 +90,7 @@ a:hover{
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
+
 }
 
 #toast{
@@ -102,4 +109,13 @@ a:hover{
     font-size: 17px;
     opacity: 0;
     transition: opacity 0.5s, bottom 0.5s;
+}
+
+#errorMsg{
+    display:none;
+}
+
+#links{
+    display: flex;
+    flex-direction: row;
 }
