@@ -31,6 +31,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 return
             }
             const user = await response.json()
+
+            sessionStorage.setItem("userData", JSON.stringify(user))
+            window.location.href = "../html/login.html"
+
+
             errorMsg.style.background = '#a5dda5'
             errorMsg.style.border = '1px solid #67ff53'
             errorMsg.style.color = 'green'
